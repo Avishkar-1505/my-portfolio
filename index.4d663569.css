@@ -118,4 +118,78 @@ img.socialIcon {
   width: 30px;
 }
 
+ul {
+  text-align: left;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+  margin: 2rem 3rem;
+  font-size: 1.25rem;
+  display: grid;
+}
+
+@media screen and (max-width: 700px) {
+  .container {
+    grid-gap: 2vw;
+    grid-template-columns: repeat(1, 1fr);
+    margin: auto 5vw;
+    display: grid;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  h1 {
+    font-size: 14vw;
+  }
+
+  h2 {
+    font-size: 4vw;
+  }
+
+  h3, p, p.large {
+    font-size: 3vw;
+  }
+
+  p.small {
+    font-size: 2.8vw;
+  }
+
+  ul {
+    gap: 1vw;
+    margin: 2vw;
+    font-size: 2.4vw;
+  }
+}
+
+@media screen and (max-height: 400px) {
+  h1 {
+    font-size: 20vh;
+  }
+
+  h2 {
+    font-size: 6vh;
+  }
+
+  h3 {
+    font-size: 4vh;
+  }
+
+  p {
+    font-size: 3.3vh;
+  }
+
+  p.large {
+    font-size: 4vh;
+  }
+
+  p.small {
+    font-size: 3vh;
+  }
+
+  ul {
+    gap: 2vh;
+    margin: 2vh 6vh;
+    font-size: 3.4vh;
+  }
+}
+
 /*# sourceMappingURL=index.4d663569.css.map */
