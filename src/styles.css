@@ -66,6 +66,8 @@ h3 {
   margin: 0;
 }
 
+
+
 p {
   font-size: 18px;
   line-height: 1.5;
@@ -105,6 +107,7 @@ a:hover {
 .container {
   display: grid;
   grid-gap: 20px;
+  /* grid-template-columns: repeat(2, 1fr); */
   grid-template-columns: 330px 300px;
   margin: 20px auto;
 }
@@ -122,4 +125,88 @@ a:hover {
 img.socialIcon {
   height: 30px;
   width: 30px;
+}
+
+ul {
+  text-align: left;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 2rem 3rem;
+  font-size: 1.25rem;
+  gap: 8px;
+}
+
+@media screen and (max-width: 700px) {
+  .container {
+    display: grid;
+    grid-gap: 2vw;
+    grid-template-columns: repeat(1, 1fr);
+    margin: auto 5vw;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  h1 {
+    font-size: 14vw; 
+  }
+
+  h2 {
+    font-size: 4vw;
+  }
+
+  h3 {
+    font-size: 3vw;
+  }
+
+  p {
+    font-size: 3vw;
+  }
+
+  p.large {
+    font-size: 3vw;
+  }
+
+  p.small {
+    font-size: 2.8vw;
+  }
+
+  ul {
+    font-size: 2.4vw;
+    margin: 2vw 2vw;
+    gap: 1vw;
+  }
+
+}
+
+@media screen and (max-height: 400px) {
+  h1 {
+    font-size: 20vh; 
+  }
+
+  h2 {
+    font-size: 6vh;
+  }
+
+  h3 {
+    font-size: 4vh;
+  }
+
+  p {
+    font-size: 3.3vh;
+  }
+
+  p.large {
+    font-size: 4vh;
+  }
+
+  p.small {
+    font-size: 3vh;
+  }
+
+  ul {
+    font-size: 3.4vh;
+    margin: 2vh 6vh;
+    gap: 2vh;
+  }
+
 }
